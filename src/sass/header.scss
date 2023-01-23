@@ -1,0 +1,37 @@
+.header {
+  padding: 20px;
+  margin-top: 30px;
+
+  &__logo {
+    color: $color-white;
+    cursor: pointer;
+    transition: color $transition;
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:active {
+      color: $active;
+    }
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    margin-top: 30px;
+    @media (max-width: 576px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__btn-garage {
+    margin-right: 10px;
+  }
+  @media (max-width: 576px) {
+    padding: 10px;
+  }
+}
