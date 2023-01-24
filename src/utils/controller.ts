@@ -206,13 +206,15 @@ class Controller {
     btnStop: HTMLButtonElement,
     setWinner?: (id: number, name: string, time: number) => void
   ): Promise<void> {
+    btnRun.disabled = true;
+    btnStop.disabled = false;
+
     const responseCarEngine:
       | IResponseCarEngine
       | undefined = await this.startCarEngine(auto.id);
     if (!responseCarEngine) {
       return;
     }
-    btnRun.disabled = true;
 
     let timeoutID;
     const imgAuto: HTMLElement | null = document.getElementById(

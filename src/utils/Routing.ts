@@ -7,7 +7,7 @@ class Router {
 
   constructor(routes: IRout[], errorAction: () => void) {
     this.routes = routes;
-    this.root = "/"; //добавить наименование репозитория перед деплоем /online-store/
+    this.root = "/async-race1/"; //добавить наименование репозитория перед деплоем /online-store/
     this.errorAction = errorAction;
   }
 

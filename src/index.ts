@@ -30,7 +30,7 @@ const routs: IRout[] = [
   // },
 ];
 //объект роутера
-const router = new Router(routs, mainPage.draw);
+const router = new Router(routs, mainPage.draw.bind(mainPage));
 header.drawElements(router);
 // mainPage.draw();
 // проврка какая скйчас страница
